@@ -153,7 +153,7 @@ git push origin master
 
 # ⭐️GIT MAC操作
 
-## 1.当你想像已经存在的repositories添加文件/文件夹时
+#### 1.当你想向已经存在的repositories添加文件/文件夹时
 
 1⃣️进入 .git所在目录(cd)
 
@@ -164,9 +164,9 @@ git commit -m [message]
 
 git push
 
-## 2.给远程仓库添加repository
+### 2.给远程仓库添加repository
 
-### …or create a new repository on the command line
+#### …or create a new repository on the command line
 
 ```
 echo "# private" >> README.md
@@ -182,7 +182,7 @@ git remote add origin git@github.com:muyuliyue/private.git
 git push -u origin main
 ```
 
-### …or push an existing repository from the command line
+#### …or push an existing repository from the command line
 
 ```
 git remote add origin git@github.com:muyuliyue/private.git
