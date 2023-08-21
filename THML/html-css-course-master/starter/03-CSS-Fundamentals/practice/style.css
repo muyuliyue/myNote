@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.product {
+  border: 3px solid black;
+  width: 825px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.product-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 15px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: red;
+}
+
+.shipping {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: rgb(175, 169, 169);
+  margin-bottom: 20px;
+}
+
+.details-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.more-info {
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: blue;
+}
+
+.more-info:visited {
+  color: gray;
+}
+
+.more-info:hover,
+.more-infor:active {
+  text-decoration: none;
+}
+
+.details-list {
+  list-style: square;
+  margin-left: 20px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+.add-cart {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  border-top: 4px solid black;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+}
+
+.add-cart:hover {
+  background-color: white;
+  color: black;
+}
+
+/* h1::before {
+  content: "SALE";
+  font-size: medium;
+  background-color: RED;
+  color: white;
+  padding: 5px 10px;
+  position: absolute;
+  top: -20px;
+  left: -30px;
+} */
+
+.sale {
+  background-color: #ec2f2f;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-size: bold;
+  padding: 7px 15px;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: -38px;
+  letter-spacing: 2px;
+  /* width: 40px;
+  text-align: center; */
+}
+
+.color {
+  background-color: #000;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.color-blue {
+  background-color: #2f6ee2;
+}
+
+.color-red {
+  background-color: red;
+}
+
+.color-yellow {
+  background-color: yellow;
+}
+
+.color-green {
+  background-color: green;
+}
+.color-brown {
+  background-color: brown;
+}

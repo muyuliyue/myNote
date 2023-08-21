@@ -1289,6 +1289,23 @@ savvy
 
 # phrase
 
+#### more so than
+
+##### "More so" means to a greater extent or degree.
+
+The restaurant's popularity was already impressive, but after the celebrity endorsement, the demand for reservations increased more so than ever.
+
+#### I'm all ears
+
+#####  means someone was listening attentively and eagerly to what was being said.
+
+##### 耳をそばだてる
+
+- Tell me about your trip to the mountains; I'm all ears.
+- He had some fantastic stories to share, so I sat back and was all ears.
+
+
+
 #### indentify with
 
 "Identify with" is a phrase that means to feel a connection or similarity with someone or something.
