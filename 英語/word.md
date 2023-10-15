@@ -8,6 +8,10 @@ not at all ~=noTaTall
 
 
 
+
+
+
+
 # 后缀
 
 ### Cess
@@ -1288,6 +1292,19 @@ savvy
 11. 
 
 # phrase
+
+
+
+#### not that much of
+
+ "not that much of" 表达某人对某事物或活动的兴趣或程度不是特别高
+
+I'm not that much of a sweet tooth("sweet tooth" 指的是对甜食的喜好)
+
+They're not that much of party animals, but they do enjoy socializing with friends on weekends." 
+（他们不是特别热衷狂欢派对，但周末喜欢和朋友社交。）
+
+
 
 #### more so than
 

@@ -63,3 +63,109 @@ div{$@5}*5 	 从5开始创建
 【key=value】可以为属性复制
 ```
 
+
+
+# CSS
+
+## FlexBox
+
+![Building Games with Flexbox - CSS Flexible Box Layout](images/building-games-with-flexbox-terms.png)
+
+
+
+```html
+<body>
+    <div class="container">
+      <div class="el el--1">HTML</div>
+      <div class="el el--2">and</div>
+      <div class="el el--3">CSS</div>
+      <div class="el el--4">are</div>
+      <div class="el el--5">amazing</div>
+      <div class="el el--6">languages</div>
+      <div class="el el--7">to</div>
+      <div class="el el--8">learn</div>
+    </div>
+  </body>
+
+```
+
+```css
+.container {
+        height: 400px;
+        font-family: sans-serif;
+        background-color: #726b6b;
+        font-size: 34px;
+        margin: 40px;
+    }
+```
+
+不使用flexbox，div block-element （背景色为灰色，注意背景不包含margin)
+
+<img src="images/image-20230902221845579.png" alt="image-20230902221845579" style="zoom:50%;" />
+
+
+
+ **添加【display: flex】**
+
+block元素变为水平
+
+因为设置了container的高，所以所有元素的高都默认等于container的400
+
+```css
+   .container {
+        /* STARTER */
+        height: 400px;
+        font-family: sans-serif;
+        background-color: #726b6b;
+        font-size: 34px;
+        margin: 40px;
+        display: flex;
+      }
+```
+
+![image-20230902222206493](images/image-20230902222206493.png)
+
+**css元素自己定义了高的时候**
+
+```css
+.el--3 {
+        background-color: green;
+        height: 150px;
+   }
+```
+
+![image-20230902223209666](images/image-20230902223209666.png)
+
+### align-items
+
+垂直对齐方式
+
+strench：默认值
+
+align-items: center;
+
+ flex-start =>all element move to the top
+
+![image-20230902223528576](images/image-20230902223528576.png)
+
+
+
+### justify-content
+
+水平对齐方式
+
+```css
+.container {
+        /* STARTER */
+        height: 400px;
+        font-family: sans-serif;
+        background-color: #726b6b;
+        font-size: 34px;
+        margin: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+```
+
+![image-20230902223905241](images/image-20230902223905241.png)
