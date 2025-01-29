@@ -8,15 +8,11 @@ not at all ~=noTaTall
 
 
 
-
-
-
-
 # 后缀
 
 ### Cess
 
-#### n - process/sucess/access/excess
+####  - process/sucess/access/excess
 
 - Are you suffering from an excess of stress in your life?
 
@@ -35,15 +31,14 @@ not at all ~=noTaTall
 - his excessive alcohol comsuption(an amount of something that is more than necessary)
 
 
->**the difference between "exceeding" and "excessively"**
+># the difference between "exceeding" and "excessively"
 >
 >-exceeding means 'very',extremely
 >
 >- The weather was exceedingly hot today." (meaning it was hotter than usual)
->
 >- "The movie was extremely exciting." (meaning it was very thrilling)
 >
->  extremely-more commonly everyday conversation,exceeding -more formal or litery
+>extremely-more commonly everyday conversation,exceeding -more formal or litery
 >
 >-excessively means 'too'
 >
@@ -1293,7 +1288,37 @@ savvy
 
 # phrase
 
+#### at all
 
+强调否定的程度，表示完全不
+
+She doesn't know him at all.
+
+He doesn't understand this topic at all.
+
+Sam didn't know much at all
+
+用来强调动作的困难或不容易，表示做某事需要付出很大的努力或是相当不容易
+
+Getting back into the front of the car at all was simply down to the **vestiges** of his **tattered** pride
+
+#### other than
+
+"Other than" 是一个短语，通常用于引出例外情况，表示除了某个特定的事物之外。这个短语在句子中作为插入语或者引导短语使用。下面是一些例子：
+
+1. **例外情况：**
+   - I like all fruits other than bananas. （我喜欢所有的水果，除了香蕉。）
+   - She has visited many countries other than Japan. （她去过很多国家，除了日本。）
+2. **排除：**
+   - There is no one here other than Mary. （这里没有别人，除了玛丽。）
+   - I have nothing to do other than wait. （我除了等待什么也做不了。）
+
+
+
+#### down to
+
+- Her success was down to hard work and determination. （她的成功归功于勤奋和决心。）
+- The decision to cancel the event was down to bad weather. （取消活动的决定是由于天气不好。）
 
 #### not that much of
 
