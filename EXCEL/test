@@ -1,0 +1,98 @@
+要实现堆叠顺序按数据大小动态排列，并且保持每个数据的颜色不变（例如数据1始终是红色，数据2始终是绿色，数据3始终是黄色），可以通过动态调整 `series` 的顺序来实现。具体步骤如下：
+
+1. **对每个类目（如星期）的数据进行排序**，确定堆叠顺序。
+2. **根据排序结果动态调整 `series` 的顺序**，同时保持颜色不变。
+3. **确保堆叠的顺序和颜色正确映射**。
+
+以下是实现代码示例：
+
+```javascript
+// 原始数据
+let data1 = [120, 132, 101, 134, 90, 230, 210]; // 红色
+let data2 = [220, 182, 191, 234, 290, 330, 310]; // 绿色
+let data3 = [150, 232, 201, 154, 190, 330, 410]; // 黄色
+
+// 颜色映射
+let colorMap = {
+    '数据1': 'red',
+    '数据2': 'green',
+    '数据3': 'yellow'
+};
+
+// 对每个类目（星期）的数据进行排序，并记录排序后的 series 顺序
+let sortedSeriesData = [];
+for (let i = 0; i < data1.length; i++) {
+    // 将每个类目的数据组合成一个数组，包含值和对应的系列名称
+    let categoryData = [
+        { value: data1[i], name: '数据1' },
+        { value: data2[i], name: '数据2' },
+        { value: data3[i], name: '数据3' }
+    ];
+    // 按值从大到小排序
+    categoryData.sort((a, b) => b.value - a.value);
+    sortedSeriesData.push(categoryData);
+}
+
+// 动态生成 series
+let series = [];
+for (let i = 0; i < sortedSeriesData[0].length; i++) {
+    series.push({
+        name: sortedSeriesData[0][i].name, // 系列名称
+        type: 'bar',
+        stack: '总量',
+        data: sortedSeriesData.map(arr => arr[i].value), // 按排序后的顺序提取数据
+        itemStyle: {
+            color: colorMap[sortedSeriesData[0][i].name] // 根据系列名称映射颜色
+        }
+    });
+}
+
+// ECharts 配置
+option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    legend: {
+        data: ['数据1', '数据2', '数据3']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    yAxis: {
+        type: 'category',
+        data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+    },
+    xAxis: {
+        type: 'value'
+    },
+    series: series
+};
+
+// 使用 ECharts 渲染
+let myChart = echarts.init(document.getElementById('main'));
+myChart.setOption(option);
+```
+
+### 关键点说明：
+1. **数据排序**：
+   - 对每个类目（如星期）的数据进行排序，确定堆叠顺序。
+   - 使用 `sort` 方法按值从大到小排序。
+
+2. **动态生成 `series`**：
+   - 根据排序结果动态生成 `series`，确保堆叠顺序正确。
+   - 使用 `itemStyle` 中的 `color` 属性，根据系列名称映射颜色，确保颜色不变。
+
+3. **颜色映射**：
+   - 使用 `colorMap` 对象将系列名称与颜色关联，确保颜色一致性。
+
+### 效果：
+- 每个类目（星期）的堆叠顺序会按数据大小动态排列。
+- 数据1始终是红色，数据2始终是绿色，数据3始终是黄色。
+
+通过这种方式，你可以实现堆叠顺序的动态调整，同时保持颜色的正确映射。
